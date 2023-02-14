@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: rgba(241, 233, 231, 0.514);
+    padding: 10px;
+  }
+  
+  
+  
+ 
+  

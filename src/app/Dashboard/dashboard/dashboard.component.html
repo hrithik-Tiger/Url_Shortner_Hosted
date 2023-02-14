@@ -1,0 +1,65 @@
+<div class="main">
+  
+
+    <div class=" container-fluid">
+      <div class="container">
+        <div class="h1 text-1 ">More than just Shorter Link</div>
+        <br>
+        <div>Build your Brand recognition and get detailed insights on how your links are performing</div>
+    <br>
+    <br>
+        <div class="custom-card" style="position: relative;">
+         
+    
+          <div class="alert alert-danger" *ngIf="error">
+            <p>{{ error }}</p>
+          </div>
+            <br>
+            <div class="row">
+           
+           
+              <form (ngSubmit)="onSubmit(formShorter)" [formGroup]="formShorter">
+               
+                <label for="longLink">
+                  <input
+                  class="form-control "
+                    type="longLink"
+                    placeholder="your Url here..."
+                    [ngClass]="{invalid: formShorter.invalid}"
+                    name="longLink"
+                    formControlName="longLink"
+                  />
+                  <button class="btn btn-outline-success rounded-pill" color="primary">Shorten</button>
+                </label>
+                </form>
+                <a *ngIf="isloading">
+                    <app-loading-spinner></app-loading-spinner>
+                </a>
+               
+               
+                
+                  <label *ngFor="let url of fetchedUrlList" class="card-body">
+                    <input  class="form-control "
+                 
+                    type="text"
+                    name="short-link"
+                    formControlName="shortLink"
+                    #inputTarget
+                    value="{{url}}"
+                    
+                  />
+                  <!-- [ngxClipboard]="inputTarget"  -->
+                  <button  color="accent" (click)="copyClipboard(inputTarget)"   class="btn btn-outline-success" >Copy this</button>
+                  </label>
+                
+    
+              
+                
+               </div>
+              
+        
+      </div>
+       
+      
+      </div>
+    </div></div>

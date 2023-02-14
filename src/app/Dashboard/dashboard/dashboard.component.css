@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(189, 210, 218);
+  }
+  
+  .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    
+  }
+  .main{
+    background-color: rgb(231, 239, 248);
+  }
+  .loginBtn {
+    width: fit-content;
+    
+  }
+  .custom-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 800px;
+    left: 10%;
+  }
+  .text-1{
+    font-family: Arial, monospace;
+   font-weight: 600;
+   
+  }
+  
+
+  
+  
+  .user-avatar {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
